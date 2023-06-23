@@ -1,3 +1,6 @@
+[Google Fonts](fonts.google.com)
+
+[Text-Align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
 # Inline CSS syntax
 `<h1 style="color: red;">Hey</h1>`
 
@@ -124,3 +127,32 @@ syntax    :   `*{color:red}`
 
 if we apply *{color:red;}
 all the elements in the document will turn red.
+
+
+<hr>
+
+### Sizes of Texts
+
+**1px**: 1/96th of an inch
+
+**1pt**: 1/72th of an inch -- _12pt = calibari 12 size in word_
+
+**1em**: 100% of parent
+
+**1rem**: 100% root
+
+**font-weight**: normal || bold || lighter _-100_ || bolder _+100_
+
+**font-family**: sans serif, serif, 
+
+syntax:
+```font-family: helvetica, sans serif```
+
+```font-family: "Times of India", serif```
+
+**Text-align**:centre || left || right || start || end || justify 
+
+**Text-align-last**: auto || centre || left || right || start || end || justify _aligns the last line of the text_
+
+
+
