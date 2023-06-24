@@ -17,6 +17,17 @@
 ```
 <hr>
 
+# External CSS syntax
+
+```
+  <html>
+    <head>  
+      <title>hello</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+   </html>
+```
+
 ## Selectors in CSS
 
 ### Element Selector
@@ -154,5 +165,204 @@ syntax:
 
 **Text-align-last**: auto || centre || left || right || start || end || justify _aligns the last line of the text_
 
+<hr>
+
+### BOX MODEL
+**Height**: 10px  _in pixels_ || 100% _in percentage_
+
+**Width**: 10px _in pixels_ || 100% _in percentage_
+
+**Border**: the outline of a the box in which resides an element
+
+#### Syntax:
+            
+                      border: value style color
+
+#### Example
+           
+                      border: 10px solid black
+
+**border-top** || **border-bottom** || **border-right** || **border-left**
+
+**border-width**
+
+#### Syntax:
+          
+                     border-width: top right bottom left
+
+                     border-width: top_and_bottom  right_and_left
+
+#### Example
+          
+                    border-width: 10px 20px 30px 40px
+
+                    border-width: 10px 20px
+                    
+**padding**: outside the element tag but inside the border
+            the dimensions of the element box remains unchanged
+
+#### Syntax:
+          
+                    padding: top right bottom left
+
+                    padding: top_and_bottom  right_and_left
+
+#### Example
+          
+                    padding: 10px 20px 30px 40px
+
+                    padding: 10px 20px
+
+**margin**: outside the borders
+
+#### Syntax:
+          
+                    margin: top right bottom left
+
+                    margin: top_and_bottom  right_and_left
+
+#### Example
+          
+                    margin: 10px 20px 30px 40px
+
+                    margin: 10px 20px
+
+#### Example: 
+![image](https://github.com/Kkkiiiirran/Frontend-Basics/assets/136697603/b94df0cf-a3ca-48c4-a2e4-808c3fdf7112)
 
 
+### div
+
+<div>
+  <p>I am a element in a div element</p>
+  <h2>I am another element in the same div element</h2>
+</div>
+
+#### Centering a div horizontally
+
+```width: 50%;
+   margin-left: 25%;
+```
+
+```height: 50%;
+   margin-top: 25%;
+```
+
+<hr>
+
+### CSS RULES
+![image](https://github.com/Kkkiiiirran/Frontend-Basics/assets/136697603/6c412d01-e42c-4b06-95b1-e9390ef2d525)
+
+### Combining CSS Selectors
+#### Group Rule
+##### Syntax:
+
+                    selector, selector {
+                    color: red; }
+
+
+##### Example
+          
+                    div, p {
+                    color: purple;}
+
+#### Child Rule
+
+##### Syntax:
+
+                    selector > selector {
+                    color: red; }
+
+
+##### Example
+          
+                    .box > p {
+                    color: purple;}
+
+#### Descendent Rule
+
+##### Syntax:
+
+                    selector selector {
+                    color: red; }
+
+
+##### Example
+          
+                    .box li {
+                    color: purple;}
+                    
+#### Chain Rule
+
+##### Syntax:
+
+                    selectorselector {
+                    color: red; }
+
+
+##### Example
+          
+                    li.box.innerbox {
+                    color: purple;}
+
+
+#### Combining combined selectors
+
+##### Syntax:
+
+                    selector selectorselector {
+                    color: red; }
+
+
+##### Example
+          
+                    p box.innerbox {
+                    color: purple;}
+
+<hr>                
+
+### Positioning
+
+#### Static
+#### Relative
+#### Absolute
+#### Fixed
+
+<hr>
+
+### Display
+
+#### Block
+Let's you alter the height and width but does not allow any other element to be in the same line.
+
+#### Inline
+Does not let you alter the height and width but allows any other element to be in the same line.
+
+#### Inline-block
+Allows both, to alter height and width as well allows other elements to be in same line.
+
+#### none
+hides the element
+
+### [Example](https://appbrewery.github.io/css-display/)
+
+<hr>
+
+#### float
+          img {
+          float: left || right }
+will shift the image left and right whcih allows the text below to take up space adjacent to the image.
+if you do not wish certain text to take the adjacent space, just use
+
+#### clear
+
+        img {
+        float: left || right}
+        footer {
+        clear: left || right || both }
+  
+
+                    
+
+            
+                    
