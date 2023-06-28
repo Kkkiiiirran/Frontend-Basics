@@ -361,6 +361,74 @@ if you do not wish certain text to take the adjacent space, just use
         footer {
         clear: left || right || both }
   
+### [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+**display**: flex;
+
+**display**: inline-flex _uses the fexbox model but retains inline properties which means that the elements occupy as much space as the item requires_
+
+**gap**: 1rem;
+
+**flex-direction**: column;
+
+**flex-basis**: 100px; _it will be witdh if flex-direction is row or default and height if flex-direction is column_
+
+#### Flex Layout
+
+**flex-wrap:** nowrap || wrap ||  reverse-wrap
+
+**flexflow**: flex-direction flex-wrap;
+
+**justify-content**: justifies content horizontally if main-axis(flex-direction: row;) is horizontal and justifies content vertically if main axis is vertical. flex-start || flex-end || center || space-around || space-between || space-evenly
+
+**align-items**: _only applicable if flex-wrap is nowrap_ aligns items  flex-start || flex-end || center || baseline || stretch
+
+**align-content**: _only applicable if flex-wrap is wrap_ aligns items  flex-start || flex-end || center || space-around || space-between || space-evenly || stretch
+
+#### Flex Sizing
+
+        content-width<width<flex-basis<min-width/max-width   
+        
+> **Note**
+> 
+> If not property is specified content-width will be used as min and maximum width width
+> 
+> If width is specified then it will use that width as the max width and disappear the content below the specified width(not-shrink)
+> 
+> If width is specified and flex-basis proerty is also used then **width** proeprty will be ignored and only flex-basis will be taken into consideration
+>
+> If **flex-basis** is specified and **min or max width** is also specified then, **min/max-width** value will be considered as the range below and above which any other property will not be considered.
+> 
+> So, if **max-width** is specified and **flex-basis** property is also given then until **flex-basis** is less than max-width, it will be taken into cosideration. But if **flex-basis** is more than max-width then it will be ignored and the container will retain max-width property only.
+> 
+> Similaryly, if **min-width** is specified and **flex-basis** property is also given then until ***flex-basis** is more than **min-width**, it will be taken into cosideration. But if **********************flex-basis********************** is less than **min-width** then it will be ignored and the container will retain min-width property only.
+
+#### flex: grow shrink flex-basis
+      flex: 0 1 1rem;
+
+**grow:** 
+
+    1[on] allowed to expand as much as the size of the web-page
+
+    0[off] not allowed to grow
+
+    2: allowed to grow as twice as other components are allowed grow
+
+**shrink:** 
+
+    1[on] allowed to shrink as much as the size of the min-width(width of the smallest word/component)
+
+    0[off] not allowed to shrink 
+  
+    2: allowed shrink as twice as the other components are allowed to shrink
+
+> **Note**
+
+_in any value more than 1, the grow or shrink is relative to the other components._
+
+_if other components grow by 100px lentgh then grow: 2; would mean that this componenet would grow by 200px_
+
+
 
                     
 
