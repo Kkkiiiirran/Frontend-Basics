@@ -428,6 +428,48 @@ _in any value more than 1, the grow or shrink is relative to the other component
 
 _if other components grow by 100px lentgh then grow: 2; would mean that this componenet would grow by 200px_
 
+### GRID
+
+#### Grid Sizing
+
+**display**: grid;
+
+**grid-template-rows**: first-row-height second-row-height; 
+
+> _we can also use **auto** as one of the values and it will adjust the height of the row according to the contnet_
+> _we can also use **1fr 2fr 3fr** as the values and it will adjust the height of the rows in ratio of these fractions_
+
+**grid-template-columns**: first-column-width  second-column-width; 
+
+> _we can also use **auto** as one of the values and it will adjust the width of the column as the 100% width of the screen_
+>  _we can also use **1fr 2fr 3fr** as the values and it will adjust the width of the columns in ratio of these fractions_
+> 
+
+**minmax**: sets the minimum and maximum width of a column and height of a row. 
+
+          minmax(400px, 800px)
+
+**repeat**: repeats the number of times a row or column should be created 
+
+          syntax: repeat(2, 200px)
+
+****Example**: create three rows each of height 100px
+
+          grid-template-rows: repeat(3, 100px)
+
+**grid-auto-row**: if we add more rows later, this attribute will be used to give all extra grids a default height.
+          
+
+**grid-template**: first-row-height second-row-height/ first-column-width  second-column-width
+
+****
+
+
+
+
+
+
+
 
 
                     
