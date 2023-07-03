@@ -462,7 +462,23 @@ _if other components grow by 100px lentgh then grow: 2; would mean that this com
 
 **grid-template**: first-row-height second-row-height/ first-column-width  second-column-width
 
-****
+**grid-column**: span 2;
+
+> **Note**
+> 
+> grid-template is essentially---
+> 
+>                                         grid-column-start: 2; // grid-row-start: 2
+>
+>                                         grid-column-end: 3; // grid-row-end: 3;
+
+**grid-area**
+
+>                                         grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end
+> 
+>                                         grid-area: 2 / 3 / 2 / 3
+> 
+
 
 
 
