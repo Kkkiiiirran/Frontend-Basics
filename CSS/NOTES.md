@@ -481,14 +481,44 @@ _if other components grow by 100px lentgh then grow: 2; would mean that this com
 
 
 
+Bootstrap
+
+###container
+the container is used to set the content’s margin. It contains row elements and the row elements are containers of columns. This is known as the grid system. 
+There are two container classes in bootstrap:  
+
+.container
+.container-fluid
+
+.container: The .container class provides a responsive fixed width container.
+In the below example, the div with class “container” will have a fixed left and right margin and will not take the complete width of its parent or the viewport.
+
+.container-fluid: The .container-fluid class provides a full-width container which spans the entire width of the viewport.
+In the below example, the div with class “container-fluid” will take up the complete width of the viewport and will expand or shrink whenever the viewport is resized. 
 
 
+.container, which has a max-width at each responsive breakpoint.
+.container-fluid, which has 100% width at all breakpoints.
+.container-{breakpoint}, which has 100% width until the specified breakpoint.
 
+<img width="566" alt="image" src="https://github.com/Kkkiiiirran/Frontend-Basics/assets/136697603/e7068f76-0896-41cf-860e-80a907606a20">
 
-
-
+<div class="container-sm">100% wide until screen size less than 576px</div>
+<div class="container-md">100% wide until screen size less than 768px</div>
+<div class="container-lg">100% wide until screen size less than 992px</div>
+<div class="container-xl">100% wide until screen size less than 1200px</div>
 
                     
+### Bootstrap Grid
+<img width="564" alt="image" src="https://github.com/Kkkiiiirran/Frontend-Basics/assets/136697603/7e15966b-7332-43e2-8367-8906a185e3d5">
 
-            
-                    
+### Customising Headings
+
+'''       <h2>
+          Fancy display heading
+                <small class="text-muted">With faded secondary text</small>
+                </h2>
+'''
+
+<img width="578" alt="image" src="https://github.com/Kkkiiiirran/Frontend-Basics/assets/136697603/d3c2ff7d-1f77-49c4-84f4-497f6607a67a">
+
